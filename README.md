@@ -145,7 +145,7 @@ Criar um sistema de armazenamento (banco de dados) para coletar e analisar dados
 
 ## Diagrama Entidade-Relacionamento (DER)
 
-O DER foi criado utilizando o SQLDesigner e está disponível como imagem neste repositório: `docs/image.png`
+O DER foi criado utilizando o SQLDesigner e está disponível como imagem neste repositório: `docs/schema.png`
 
 Para visualizar ou editar o DER:
 1. Acesse o [SQLDesigner online](https://ondras.zarovi.cz/sql/demo/)
@@ -156,6 +156,19 @@ Para visualizar ou editar o DER:
 - `README.md`: Este arquivo, contendo a documentação explicativa do MER
 - `docs/schema.xml`: Arquivo XML do modelo para importação no SQLDesigner
 - `docs/schema.sql`: Script SQL para criação das tabelas do banco de dados
-- `docs/image.png`: Imagem do Diagrama Entidade-Relacionamento (DER)
+- `docs/schema.png`: Imagem do Diagrama Entidade-Relacionamento (DER)
+- `docs/consultas_exemplo.sql`: Exemplos de consultas SQL para análise de dados
 
 Este modelo de banco de dados relacional aplica os princípios de relacionamento 1:N (um para muitos) e as conexões entre chaves primárias e estrangeiras, respeitando as regras de negócio definidas para atender à solução de monitoramento agrícola da FarmTech Solutions.
+
+## Consultas SQL de Exemplo
+
+O arquivo `docs/consultas_exemplo.sql` contém várias consultas SQL que demonstram como extrair informações úteis do banco de dados. Estas consultas incluem:
+
+1. Cálculo da quantidade total de água aplicada em cada mês
+2. Análise da variação do nível de pH do solo ao longo do ano
+3. Cálculo da média de umidade por cultura
+4. Soma da quantidade total de nutrientes aplicados por plantação
+5. Listagem das últimas sugestões de ajuste para cada plantação
+
+Estas consultas servem como ponto de partida para análises mais complexas e podem ser adaptadas conforme as necessidades específicas do projeto.
